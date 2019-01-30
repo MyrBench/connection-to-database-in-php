@@ -1,0 +1,11 @@
+in my config.php page i charge my databse in a variable :
+/* Attempt to connect to MySQL database */
+$mysqli = new mysqli(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+and in my others page i need to connect to my database with require_once'full url';
+I get this error :
+Warning: require_once(localhost/phpmyadmin/db_structure.php?server=1&db=bddnew_crm): failed to open stream: No such file or directory in C:\xampp\htdocs\ex\index.php on line 40
+
+Fatal error: require_once(): Failed opening required 'localhost/phpmyadmin/db_structure.php?server=1&db=bddnew_crm' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\ex\index.php on line 40
+ 
+ PLEASE HOW I CAN CHANGE THE CONNECTION TO MY DATABASE ?
